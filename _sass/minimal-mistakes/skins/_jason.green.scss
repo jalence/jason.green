@@ -1,0 +1,66 @@
+/* ==========================================================================
+   jason.green skin
+   ========================================================================== */
+
+/* Colors */
+
+$gray: #7a8288 !default;
+$dark-gray: mix(#000, $gray, 40%) !default;
+$darker-gray: mix(#000, $gray, 60%) !default;
+$light-gray: mix(#fff, $gray, 50%) !default;
+$lighter-gray: mix(#fff, $gray, 90%) !default;
+
+$primary-color: #00A06C !default;
+$light-primary: mix(#fff, $primary-color, 10%) !default;
+$lighter-primary: mix(#fff, $primary-color, 90%) !default;
+$info-color   : #00A06C !default;
+
+$text-color: $dark-gray;
+
+/* Mast Head  */
+.greedy-nav a {
+    color:$primary-color !important;
+    opacity: .85;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+.greedy-nav a:hover {
+    color:$primary-color !important;
+    opacity: 1;
+}
+.site-subtitle {
+    color:$text-color !important;
+    font-weight: normal;
+}
+
+/* Sidebar */
+
+.author__urls a{
+    display: inline !important;
+}
+
+  
+/* Main Content */
+
+.archive__item a{
+    text-decoration: none;
+}
+.archive__item a:hover{
+    text-decoration: underline;
+}
+.page__taxonomy-item:hover{
+    color: $lighter-gray !important;
+    background-color:$primary-color;
+    border-color: $primary-color;
+}
+.page__taxonomy-item{
+    border-color: $primary-color !important;
+    color: $primary-color !important;
+}
+
+/* Footer */
+$footer-background-color: $light-primary !default;
+.page__footer {
+    color: $lighter-gray !important; // override
+  }
+
