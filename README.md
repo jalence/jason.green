@@ -1,6 +1,5 @@
 # jason.green
-Personal website and tech blog
-Powered by Jekyll & Minimal Mistakes, a Jekyll theme
+Personal website and tech blog powered by Jekyll & Minimal Mistakes, a Jekyll theme
 
 ## Goals
 * Portfolio
@@ -12,4 +11,8 @@ Powered by Jekyll & Minimal Mistakes, a Jekyll theme
 * Hiking blog
   * Galleries and trail descriptions
 * Ways to learn about me and contact me
+
+## Things to do
+* Add FreeCodeCamp projects to Portfolio
+* Replace Font Awesome with Iconify
 
