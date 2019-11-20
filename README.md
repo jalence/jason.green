@@ -15,4 +15,5 @@ Personal website and tech blog powered by Jekyll & Minimal Mistakes, a Jekyll th
 ## Things to do
 * Add FreeCodeCamp projects to Portfolio
 * Replace Font Awesome with Iconify
-
+* Implement breadcrumbs
+  * Issue with pathing, multilevel deep collections (projects/fcc/..)
