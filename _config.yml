@@ -114,45 +114,45 @@ author:
   email            :
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa:envelope-o"
       # url: mailto:your.name@email.com
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fa-solid:link"
       # url: "https://your-website.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fa-brands:twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      icon: "fa-brands:facebook-square"
       # url: "https://facebook.com/greenjc"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fa-brands:github"
       url: "https://github.com/Jalence"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      icon: "fa-brands:instagram"
       url: "https://instagram.com/j.greeeen"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon:  "fa-brands:twitter-square"
       # url:
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      icon:  "fa-brands:facebook-square"
       # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
+      icon:  "fa-brands:github"
+      url:   "https://github.com/Jalence"
     - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+      icon:  "fa-brands:gitlab"
       # url:
     - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
+      icon:  "fa-brands:bitbucket"
       # url:
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+      icon:  "fa-brands:instagram"
+      url:   "https://instagram.com/j.greeeen"
 
 
 # Reading Files

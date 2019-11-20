@@ -44,14 +44,14 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
+          <span class="iconify" data-icon="el:map-marker"></span> <span itemprop="name">{{ author.location }}</span>
         </li>
       {% endif %}
 
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}
-            <li><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> <a href="{{ link.url }}" rel="nofollow noopener noreferrer">{{ link.label }}</a></li>
+          <li><span class="iconify" data-icon="{{ link.icon | default: 'fa-solid:link' }}" aria-hidden="true"></span> <a href="{{ link.url }}" rel="nofollow noopener noreferrer">{{ link.label }}</a></li>
           {% endif %}
         {% endfor %}
       {% endif %}
@@ -68,7 +68,7 @@
         <li>
           <a href="mailto:{{ author.email }}">
             <meta itemprop="email" content="{{ author.email }}" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}
+            <i class="iconify" data-icon="ic:baseline-email"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}
           </a>
         </li>
       {% endif %}
@@ -116,7 +116,7 @@
       {% if author.instagram %}
         <li>
           <a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram
+            <span class="iconify" data-icon="fa-brands:instagram" aria-hidden="true"></span> Instagram
           </a>
         </li>
       {% endif %}
@@ -140,7 +140,7 @@
       {% if author.github %}
         <li>
           <a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+            <span class="iconify" data-icon="fa-brands:github" aria-hidden="true"></span> GitHub
           </a>
         </li>
       {% endif %}

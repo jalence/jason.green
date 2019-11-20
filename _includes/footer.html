@@ -7,12 +7,12 @@
     {% if site.footer.links %}
       {% for link in site.footer.links %}
         {% if link.label and link.url %}
-          <li><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> <a href="{{ link.url }}" rel="nofollow noopener noreferrer">{{ link.label }}</a></li>
+          <li><span class="iconify" data-icon="{{ link.icon | default: 'fa-solid:link' }}" aria-hidden="true"></span> <a href="{{ link.url }}" rel="nofollow noopener noreferrer">{{ link.label }}</a></li>
         {% endif %}
       {% endfor %}
     {% endif %}
 
-    <li><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">{{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    <li><span class="iconify" data-icon="fa-solid:rss-square"></span> <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}">{{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
   </ul>
 </div>
 
