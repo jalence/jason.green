@@ -17,3 +17,9 @@ Personal website and tech blog powered by Jekyll & Minimal Mistakes, a Jekyll th
 * Replace Font Awesome with Iconify
 * Implement breadcrumbs
   * Issue with pathing, multilevel deep collections (projects/fcc/..)
+
+## Theme Modifications
+* (2019.11.10) Created theme components for SASS, mostly colors but also changed :hover text-decorations and border colors. Interested in changing themes later. Still ongoing.
+* (2019.11.10) Implemented AdobeTypekit
+* (2019.11.10) Implemented favicons
+* (2019.11.20) Switched icons from Font Awesome to Iconify
