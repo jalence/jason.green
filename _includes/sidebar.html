@@ -35,7 +35,7 @@
               {% for child in link.children %}
 
               {% if child.label and child.url %}
-                <li><span class="iconify" data-icon="{{ child.icon | default: 'fa-solid:link' }}" aria-hidden="true"></span> <a href="{{ child.url }}" rel="nofollow noopener noreferrer">{{ child.label }}</a></li>
+                <li><span class="iconify" data-icon="{{ child.icon | default: 'fa-solid:link' }}" aria-hidden="true"></span> <a href="{{ child.url }}" target="_blank">{{ child.label }}</a></li>
               {% endif %}
               {% endfor %}
           </ul>
