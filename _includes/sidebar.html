@@ -20,6 +20,32 @@
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
+
+      {% if s.links %}
+      <nav class="nav__list">
+        <input id="ac-toc" name="accordion-toc" type="checkbox" />
+        <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+
+        <ul class="nav__items">
+        {% for link in s.links %} 
+        <li>
+        <span class="nav__sub-title">{{ link.title }}</span>
+        {% if link.children != null %}
+          <ul>
+              {% for child in link.children %}
+
+              {% if child.label and child.url %}
+                <li><span class="iconify" data-icon="{{ child.icon | default: 'fa-solid:link' }}" aria-hidden="true"></span> <a href="{{ child.url }}" rel="nofollow noopener noreferrer">{{ child.label }}</a></li>
+              {% endif %}
+              {% endfor %}
+          </ul>
+        </li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+
+      </nav>
+      {% endif %}
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
     {% endfor %}
     {% if page.sidebar.nav %}
