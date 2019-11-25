@@ -24,7 +24,7 @@ sidebar:
         url: https://materializecss.com
 ---
 
-Goal is to create a survey form that demonstrates basic HTML and CSS skills. 
+Goal is to create a survey form that demonstrates basic HTML, CSS, and basic Form usage. Instead of using the Bootstrap framework, I decided to try something different, and used the Materialize CSS framework. 
 
 ## User stories
 <!-- User stories are short, simple descriptions of a feature/requirement told from the perspective of the user or client. 
